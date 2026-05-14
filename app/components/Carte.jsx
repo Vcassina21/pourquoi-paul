@@ -76,6 +76,11 @@ export default function Carte() {
       </div>
 
       <div style={{ textAlign: "center", marginTop: 64, paddingTop: 32, borderTop: "1px solid var(--border)" }}>
+      <div style={{ maxWidth: 600, margin: "0 auto 24px", padding: "16px 24px", borderLeft: "3px solid var(--accent)", background: "rgba(255,107,26,0.05)" }}>
+  <p style={{ fontFamily: "var(--font-display)", fontStyle: "italic", fontSize: 16, color: "var(--text-dim)", margin: 0 }}>
+    Notre pain ? Fait maison. Enfin, quand on a le temps.
+  </p>
+</div>
         <p style={{ fontFamily: "var(--font-display)", fontStyle: "italic", fontSize: 16, color: "var(--muted)", margin: 0 }}>{CARTE.note}</p>
       </div>
     </section>
