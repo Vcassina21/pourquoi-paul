@@ -27,6 +27,9 @@ export const metadata = {
     title: "Pourquoi Paul — Restaurant Dordogne",
     description: "Cuisine canaille, produits locaux, vins nature. Port-Sainte-Foy-et-Ponchapt.",
   },
+  verification: {
+  google: 'tcaU4pMF8rbqhtsvZTw0oFrGNka7Qd8rh2hudeZ-hiw',
+},
 };
 
 export default function RootLayout({ children }) {
