@@ -17,15 +17,21 @@ export async function GET() {
 
 export async function POST(req) {
   const body = await req.json()
+  
+  // Crée en DRAFT — pas publié automatiquement
   const doc = await client.create({
     _type: 'avis',
     name: body.name,
     stars: body.rating,
     text: body.text,
-    date: new Date().toISOString().split('T')[0],
+    date: new Date().toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' }),
     source: 'Site web',
+    statut: 'en attente',
   })
-  return Response.json({
+
+  // Ne PAS publier — reste en brouillon dans Sanity
+  return Response.json({ success: true })
+}
     id: doc._id,
     name: doc.name,
     rating: doc.stars,

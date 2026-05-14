@@ -8,6 +8,7 @@ const avis = {
     { name: 'text', title: 'Avis', type: 'text' },
     { name: 'date', title: 'Date', type: 'string' },
     { name: 'source', title: 'Source (Google, TripAdvisor…)', type: 'string' },
+    { name: 'statut', title: 'Statut', type: 'string', options: { list: ['publié', 'en attente'] }, initialValue: 'en attente' },
   ]
 }
 
