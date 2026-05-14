@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 
-export default function useReveal(threshold = 0.15, rootMargin = "0px 0px -80px 0px") {
+export default function useReveal(threshold = 0.05, rootMargin = "0px 0px -20px 0px") {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
