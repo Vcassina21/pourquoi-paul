@@ -17,9 +17,7 @@ export async function GET() {
 
 export async function POST(req) {
   const body = await req.json()
-  
-  // Crée en DRAFT — pas publié automatiquement
-  const doc = await client.create({
+  await client.create({
     _type: 'avis',
     name: body.name,
     stars: body.rating,
@@ -28,17 +26,7 @@ export async function POST(req) {
     source: 'Site web',
     statut: 'en attente',
   })
-
-  // Ne PAS publier — reste en brouillon dans Sanity
   return Response.json({ success: true })
-}
-    id: doc._id,
-    name: doc.name,
-    rating: doc.stars,
-    text: doc.text,
-    date: doc.date,
-    verified: true,
-  })
 }
 
 export async function DELETE(req) {
