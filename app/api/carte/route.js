@@ -1,7 +1,7 @@
 import { client } from '@/sanity/lib/client'
 
 export async function GET() {
-  const plats = await client.fetch(`*[_type == "plat"] | order(espace asc, section asc, name asc)`)
+  const plats = await client.fetch(`*[_type == "plat"] | order(espace asc, ordre asc, name asc)`)
 
   // Groupe par espace puis par section
   const grouped = { restaurant: {}, terrasse: {} }

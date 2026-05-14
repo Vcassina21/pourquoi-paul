@@ -22,6 +22,7 @@ const plat = {
     { name: 'price', title: 'Prix (ex: 12 €)', type: 'string' },
     { name: 'section', title: 'Section', type: 'string' },
     { name: 'espace', title: 'Espace', type: 'string' },
+    { name: 'ordre', title: "Ordre d'affichage", type: 'number' },
     { name: 'photo', title: 'Photo du plat', type: 'image', options: { hotspot: true } },
   ]
 }
