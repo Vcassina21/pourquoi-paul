@@ -33,7 +33,7 @@ export default function Hero({ onCTA, medias }) {
       {/* Logo filigrane */}
 <div style={{
   position: "absolute",
-  top: "30%",
+  top: "26%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "clamp(200px, 28vw, 380px)",
