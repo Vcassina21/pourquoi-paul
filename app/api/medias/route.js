@@ -20,5 +20,6 @@ export async function GET() {
     logoUrl:             url(m.logo),
     caveUrl: url(m.cave),
     conceptUrl: url(m.concept),
+    bouteilles: m.bouteilles ? m.bouteilles.map(b => url(b)) : [],
   })
 }

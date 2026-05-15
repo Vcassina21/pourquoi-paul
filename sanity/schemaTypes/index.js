@@ -96,6 +96,12 @@ const medias = {
     { name: 'logo', title: 'Logo du restaurant', type: 'image', options: { hotspot: false } },
     { name: 'cave', title: 'Photo — La Cave', type: 'image', options: { hotspot: true } },
     { name: 'concept', title: 'Photo — Le Concept (fond)', type: 'image', options: { hotspot: true } },
+    {
+  name: 'bouteilles',
+  title: 'Carrousel — Bouteilles de vin',
+  type: 'array',
+  of: [{ type: 'image', options: { hotspot: true } }]
+},
   ]
 }
 export const schemaTypes = [avis, plat, membre, parametres, medias]
