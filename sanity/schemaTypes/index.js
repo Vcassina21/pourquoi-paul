@@ -80,6 +80,16 @@ const parametres = {
   ]
 }
 
+const newsletter = {
+  name: 'newsletter',
+  title: 'Newsletter — Emails',
+  type: 'document',
+  fields: [
+    { name: 'email', title: 'Email', type: 'string' },
+    { name: 'date', title: "Date d'inscription", type: 'datetime' },
+  ]
+}
+
 const medias = {
   name: 'medias',
   title: 'Photos du site',
@@ -104,5 +114,5 @@ const medias = {
 },
   ]
 }
-export const schemaTypes = [avis, plat, membre, parametres, medias]
+export const schemaTypes = [avis, plat, membre, parametres, medias, newsletter]
 export const schema = { types: schemaTypes }
