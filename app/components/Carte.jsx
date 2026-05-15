@@ -17,7 +17,6 @@ export default function Carte() {
     });
   }, []);
 
-  const source = carteData || CARTE;
   const current = {
     subtitle: CARTE[active]?.subtitle,
     desc: CARTE[active]?.desc,
@@ -38,7 +37,6 @@ export default function Carte() {
         <p style={{ fontSize: 17, color: "var(--text-dim)", maxWidth: 620, margin: "0 auto", lineHeight: 1.7 }}>{CARTE.intro}</p>
       </div>
 
-      {/* Tabs */}
       <div role="tablist" style={{ display: "flex", justifyContent: "center", gap: 0, marginBottom: 56, borderBottom: "1px solid var(--border)", flexWrap: "wrap" }}>
         {[{ key: "restaurant", label: "Au Restaurant" }, { key: "terrasse", label: "En Terrasse" }].map((tab) => (
           <button key={tab.key} role="tab" aria-selected={active === tab.key} onClick={() => setActive(tab.key)} className="carte-tab"
